@@ -14,6 +14,8 @@ main {
   padding: var(--space-300);
   border-radius: var(--space-300);
   box-sizing: border-box;
+  border: 1px solid var(--black);
+  box-shadow: 7px 7px 0px var(--black);
 
   p,
   h2 {
@@ -27,7 +29,11 @@ main {
   }
 
   .tag {
+    display: inline-block;
     font-weight: 700;
+    background-color: var(--yellow);
+    padding: var(--space-50) var(--space-150);
+    border-radius: var(--space-50);
   }
 
   .preview-text {
