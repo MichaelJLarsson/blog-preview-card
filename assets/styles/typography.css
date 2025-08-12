@@ -1,0 +1,28 @@
+.text-preset-1,
+.text-preset-2,
+.text-preset-3,
+.text-preset-4 {
+  font-family: "Figtree";
+  color: var(--gray-950);
+  line-height: 150%;
+  letter-spacing: 0px;
+  font-weight: 300;
+}
+
+.text-preset-1 {
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.text-preset-2 {
+  font-size: 16px;
+}
+
+.text-preset-3 {
+  font-size: 14px;
+}
+
+.text-preset-4 {
+  font-size: 14px;
+  font-weight: 900;
+}
