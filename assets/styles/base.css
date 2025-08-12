@@ -1,6 +1,8 @@
 html,
 body {
   font-family: "Figtree";
+  font-size: 16px;
+  font-weight: 500;
   background-color: var(--yellow);
   height: 100svh;
   margin: 0;
