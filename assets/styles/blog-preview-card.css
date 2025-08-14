@@ -44,13 +44,13 @@ main {
 
   .author {
     display: grid;
-    grid-template-columns: 32px 1fr;
+    grid-template-columns: var(--space-500) 1fr;
     align-items: center;
     gap: var(--space-150);
 
     .avatar {
-      height: 32px;
-      width: 32px;
+      height: var(--space-500);
+      width: var(--space-500);
     }
 
     .name {
