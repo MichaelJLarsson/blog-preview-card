@@ -9,8 +9,25 @@
 
 /* Spacing */
 :root {
+  --space-500: 32px;
   --space-300: 24px;
   --space-150: 12px;
   --space-100: 8px;
   --space-50: 4px;
+}
+
+/* Fluid font size */
+:root {
+  --min-vw: 23.4375;
+  --max-vw: 27;
+
+  --min-fs: 0.875;
+  --max-fs: 1.5;
+
+  --min-fs-rem: var(--min-fs) * 1rem;
+  --max-fs-rem: var(--max-fs) * 1rem;
+  --min-vw-rem: var(--min-vw) * 1rem;
+
+  --slope: calc(var(--max-fs) - var(--min-fs)) * (100vw - var(--min-vw-rem)) /
+    (var(--max-vw) - var(--min-vw));
 }

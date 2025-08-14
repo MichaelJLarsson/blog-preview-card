@@ -7,22 +7,40 @@
   line-height: 150%;
   letter-spacing: 0px;
   font-weight: 500;
+  font-size: clamp(
+    var(--min-fs-rem),
+    var(--min-fs-rem) + var(--slope),
+    var(--max-fs-rem)
+  );
 }
 
 .text-preset-1 {
-  font-size: clamp(1.25rem, -0.3947rem + 7.0175vw, 1.5rem);
+  --min-fs: 1.25;
+  --max-fs: 1.5;
+
+  --min-fs-rem: var(--min-fs) * 1rem;
+  --max-fs-rem: var(--max-fs) * 1rem;
+
   font-weight: 800;
 }
 
 .text-preset-2 {
-  font-size: clamp(0.875rem, 0.0526rem + 3.5088vw, 1rem);
+  --min-fs: 0.875;
+  --max-fs: 1;
+
+  --min-fs-rem: var(--min-fs) * 1rem;
+  --max-fs-rem: var(--max-fs) * 1rem;
 }
 
 .text-preset-3 {
-  font-size: clamp(0.75rem, -0.0724rem + 3.5088vw, 0.875rem);
+  --min-fs: 0.75;
+  --max-fs: 0.875;
+
+  --min-fs-rem: var(--min-fs) * 1rem;
+  --max-fs-rem: var(--max-fs) * 1rem;
 }
 
 .text-preset-4 {
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 800;
 }
